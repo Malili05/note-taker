@@ -10,15 +10,15 @@ app.use(express.json())
 
 
 app.get('/notes', (req,res) => {
-    console.log('hello')
+
     res.sendFile(path.join(__dirname,'./public/notes.html'))
 })
 app.get('/', (req,res) => {
-    console.log('hello')
+
     res.sendFile(path.join(__dirname,'./public/index.html'))
 })
 app.get('/api/notes', (req,res) => {
-    console.log('hello')
+
     res.sendFile(path.join(__dirname,'./db/db.json'))
 })
 app.post('/api/notes', (req,res) => {
@@ -35,12 +35,11 @@ app.post('/api/notes', (req,res) => {
         })
     })
 })
-app.delete
+// app.delete
 // app.get('/assets/css/styles.css', (req,res) => {
 //     console.log('hello')
 //     res.sendFile(path.join(__dirname,'./public/assets/css/styles.css'))
 // })
-
 
 
 
